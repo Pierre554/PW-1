@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClimaTempo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo">🌤️ Clima<span>Tempo</span></div>
+
+        <div class="search">
+            <input id="cityInput" type="text" placeholder="Digite uma cidade...">
+            <button onclick="searchCity()">Buscar</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="current">
+            <div>
+                <h2 id="city">Carregando...</h2>
+                <p id="date"></p>
+                <h1 id="temperature">--°</h1>
+                <p id="condition">Consultando clima...</p>
+            </div>
+            <div class="weather-icon" id="weatherIcon">🌤️</div>
+        </section>
+
+        <section class="details">
+            <div class="detail-card">
+                <h3>💧 Umidade</h3>
+                <p id="humidity">--%</p>
+            </div>
+
+            <div class="detail-card">
+                <h3>💨 Vento</h3>
+                <p id="wind">-- km/h</p>
+            </div>
+
+            <div class="detail-card">
+                <h3>🌧️ Chuva</h3>
+                <p id="rain">-- mm</p>
+            </div>
+        </section>
+
+        <h2 class="section-title">📅 Próximos 7 dias</h2>
+
+        <section class="forecast" id="forecast"></section>
+
+        <p id="status">Carregando previsão...</p>
+    </main>
+
+    <footer>
+        ClimaTempo © 2026 | Dados: Open-Meteo
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
